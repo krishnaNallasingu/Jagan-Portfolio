@@ -38,41 +38,43 @@ let data;
 
   const projects = [
     {
-      name: 'Classity',
-      image: './img/Classity.png',
+      name: 'AudioFuse',
+      image: './audio_fus',
       about:
         'Platform to allow instructors from all over the world to create and teach courses. Students can enrol those courses and learn through them',
-      code: 'https://github.com/Domino-Developers/Classity',
-      view: 'https://classity-v09.herokuapp.com/',
+      code: 'https://github.com/krishnaNallasingu/Audio_Fuse',
+      view: 'https://github.com/krishnaNallasingu/Audio_Fuse',
     },
     {
-      name: 'Ad Agency',
-      image: './img/AdAgency.png',
+      name: 'BloodLytics',
+      image: './bloodlytics.png',
       about:
         'Management system for an Ad Agency to store and manipulate Actors, Brands, Directors, add contracts between them and much more with a CLI in Python',
-      code: 'https://github.com/tichnas/AdAgency',
+      code: 'https://github.com/hemanth-sunkireddy/BloodLytics',
+      view: 'https://krishnanallasingu.github.io/BloodLytics/',
+
     },
     {
-      name: 'IIIT-GPS',
-      image: './img/IIIT-GPS.png',
+      name: 'Network File System',
+      image: './NFS.jpeg',
       about:
         'Platform to help students better understand and prepare for the courses they will be taking in upcoming semesters. Look at reviews, learning curve, etc.',
-      code: 'https://github.com/tichnas/IIIT-GPS',
-      view: 'https://tichnas.github.io/IIIT-GPS',
+      code: 'https://github.com/serc-courses/final-project-36',
+      view: 'https://github.com/serc-courses/final-project-36',
     },
     {
       name: 'C Shell',
       image: './img/C Shell.png',
       about:
         'Bash-like command interpreter, written in C, with support for process management, piping/redirection and built-in as well as system commands',
-      code: 'https://github.com/tichnas/C-Shell',
+      code: 'https://github.com/serc-courses/final-project-36',
     },
     {
-      name: 'Advanced xv6',
-      image: './img/xv6.png',
-      about:
-        'Improved xv6 with new scheduling techniques, system calls and user programs. Analysis of different scheduling algorithms is done using Python',
-      code: 'https://github.com/tichnas/Advanced-xv6',
+      // name: 'Advanced xv6',
+      // image: './img/xv6.png',
+      // about:
+      //   'Improved xv6 with new scheduling techniques, system calls and user programs. Analysis of different scheduling algorithms is done using Python',
+      // code: 'https://github.com/tichnas/Advanced-xv6',
     },
   ];
 
