@@ -13,7 +13,7 @@ let data;
       './Jagan_CV.pdf',
 
     about: [
-      `A dedicated Computer Science student skilled in Software, full-stack development and machine learning, eager to create innovative, data-driven applications that push technology’s boundarie`,
+      `A dedicated Computer Science student skilled in Software, full-stack development and machine learning, eager to create innovative, data-driven applications that push technology’s boundaries.`,
       ``,
     ],
   };
