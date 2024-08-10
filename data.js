@@ -7,15 +7,14 @@ let data;
       'a Student at IIIT-H',
       'a Developer',
       'an Enthusiast',
-      'a lovely Human Being :)',
     ],
     resume:
-      // 'https://drive.google.com/file/d/1UoGwSmKeJQwybdtnFiEzsrmSRYv5nRrL/view?usp=sharing',
+      // 'https://drive.google.com/file/d/1_In16hkJHQmg1fqVkl9ofBi8XQQPl35T/view',
       './Jagan_CV.pdf',
 
     about: [
-      `a 19-year-old Junior(3rd) pursuing my B.Tech. from IIIT Hyderabad in Computer Science and Engineering.`,
-      `...and, I'm an introvert. Believe me, writing this section took more time than coding up the rest of the website. I hope to overcome this problem soon. Wish me luck.`,
+      `A dedicated Computer Science student skilled in Software, full-stack development and machine learning, eager to create innovative, data-driven applications that push technology’s boundarie`,
+      ``,
     ],
   };
 

@@ -108,7 +108,7 @@ const typeStart = () => {
   const typingElement = document.querySelector('.running-text');
   const sentences = data.about.typing;
 
-  const letterWait = 80;
+  const letterWait = 60;
   const sentenceWait = 2000;
 
   const type = (sentence = -1, letter = -1, erasing) => {
