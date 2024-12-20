@@ -1,0 +1,225 @@
+
+\documentclass[a4paper,10.5 pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{-5pt}{5pt}{4pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge\textcolor{orange}{Jagankrishna Nallasingu} \\[5.5pt]
+\href{https://github.com/krishnaNallasingu}{\raisebox{-0.05\height}\faGithub\ krishnaNallasingu} \ $|$ \ 
+\href{https://www.linkedin.com/in/jagankrishna-nallasingu-0725b4268/}{\raisebox{-0.05\height}\faLinkedin\ Jagankrishna} \ $|$ \ 
+\href{https://krishnanallasingu.github.io/Jagan-Portfolio/}{\raisebox{-0.05\height}\faGlobe \ MyPortfolio} \ $|$ \ 
+\href{mailto:jagankrishna369@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ jagankrishna369@gmail.com} \ $|$ \
+\href{tel:+91 6304748076}{\raisebox{-0.05\height}\faMobile \ +91 6304748076} \\
+\end{tabularx}
+\\
+\section{\textcolor{orange}{Profile}}
+$\bullet$ 
+A dedicated Computer Science student skilled in Software, full-stack development and machine learning, eager to create innovative, data-driven applications that push technology's boundaries.
+
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{\textcolor{orange}{Education}}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+
+\textbf{International Institute of Information Technology, Hyderabad}   & \hfill \textbf{Gachibowli, TG} \\
+$\bullet$ B.Tech in Computer Science \& Engineering %(CGPA: 6+)
+& \hfill  2022 - 2026 \\
+\textbf{Rajiv Gandhi University of Knowledge and Technologies}   & \hfill  \textbf{R.K.Valley, AP} \\
+$\bullet$ Intermediate: Pre University Course at  RGUKT-IIIT (CGPA: 9.08) & \hfill  2020 - 2022\\
+\textbf{Z.P.H.School ChinnaChepali} & \hfill \textbf{Kadapa, AP} \\
+$\bullet$ Class 10th: SSC - AndhraPradesh - (GPA: 10.0) & \hfill 2019 - 2020 \\
+\end{tabularx}
+
+
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Experience
+\section{\textcolor{orange}{Work Experience}}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+
+\textbf{Inventory Model: For Cost Optimization} | Intern & \hfill Jan 2024 -  April 2024 \\
+$\bullet$ ML Model, Software Documentation, SDLC, Visualization
+\hfill &  
+\href{https://drive.google.com/file/d/1Qz-ybxSOPVqbZ2vNE07MJVtzQUICUbNd/view?usp=drivesdk}{Link to Doc} \\
+
+\multicolumn{2}{@{}X@{}}{
+$\bullet$ Developed an advanced Inventory model for the startup \href{https://clubartizen.com}{Club Artizen}, leveraging SARIMA and polynomial curve fitting to accurately forecast inventory needs; reduced manual forecasting errors by 40\% and optimized inventory costs by 25\%.}\\
+
+\textbf{Campus Ambassador: Ecell IIT-G} | \href{https://www.linkedin.com/in/jagankrishna-nallasingu-0725b4268/?profileId=ACoAAEGVklYBsBrCiF6ouOgm_wx2_Fy5nkFMJWI}{Intern}  & \hfill Dec 2023 - Jan 2024 \\
+\multicolumn{2}{@{}X@{}}{$\bullet$ Worked as a Campus Ambassador for  E-Cell, IIT Guwahati Remote, Assam, India. Ranked in Top 15 out of 300 Ambassadors. Proudly represented UDGAM - 24.}  \\
+
+\textbf{Mentor: Reliance UG Scholars } | Mentor & \hfill July 2024 - Present \\
+\multicolumn{2}{@{}X@{}}{$\bullet$ Proficient mentor at Reliance Foundation, specializing in guidance, Technical support, Programming, Software, Academic consultation. Committed to nurturing student's growth and success.}\\
+
+\textbf{Social Media Team: Felicity-23, IIIT-H } | \href{https://clubs.iiit.ac.in/profile/jagan.krishna}{Team Member} & \hfill Dec 2022 - June 2023 \\
+\multicolumn{2}{@{}X@{}}{$\bullet$ Played a key role in promoting IIIT-H Felicity 2023, engaging audiences, and enhancing digital marketing skills.}  \\
+\end{tabularx}
+
+
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+%Projects
+
+\section{\textcolor{orange}{Projects}}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+
+\textbf{BloodLytics} \|  Data Visualisation, D3.js 
+& \hfill \href{https://github.com/krishnaNallasingu/BloodLytics}{Source Code} - \href{https://krishnanallasingu.github.io/BloodLytics/}{Link to WEB} \\
+\multicolumn{2}{@{}X@{}}{$\bullet$ Developed an interactive dashboard to explore blood donation statistics, distribution, and donor behavior, highlighting the emergence of various blood groups}\\
+
+\textbf{C Shell} \|  C, Linux, System Calls, POSIX 
+& \hfill \href{https://github.com/serc-courses/mini-project-1-krishnaNallasingu}{Source Code} \\
+\multicolumn{2}{@{}X@{}}{$\bullet$  Bash-like command interpreter, written in C Support for process management, piping/redirection and built-in as well as system commands}\\
+
+\textbf{Network File System} \|  C, OS, Networks, Concurrency, System Calls
+& \hfill  \href{https://github.com/serc-courses/final-project-36}{Source Code} \\
+\multicolumn{2}{@{}X@{}}{$\bullet$ Developed a basic Network File System with Naming, Storage, and Client Servers, addressing concurrency with TCP/UDP protocols. Implemented file operations (read, write, delete, create, copy, move).}\\
+
+\textbf{Audio Fuse - A static music Website} \| HTML, CSS, Javascript 
+& \hfill \href{https://github.com/krishnaNallasingu/Audio_Fuse}{Source Code} \\
+\multicolumn{2}{@{}X@{}}{$\bullet$ Designed and developed 'Audio Fuse" music website with responsive UI, integrating interactive features like play buttons, search, and dynamic album displays.} \\
+
+\textbf{Chalana Chitram - Relational database for Queries }\| DBMS, MySql, UML Diagrams & \hfill\href{https://github.com/krishnaNallasingu/Chalana_Chitram-SQL-Project}{Source Code} \\
+\multicolumn{2}{@{}X@{}}{$\bullet$ This project stores movie, cast, and crew details in a relational database for easy retrieval. We documented the schema and developed a Python app for database management with effective error handling.}
+\\
+\end{tabularx}
+
+
+
+\section{\textcolor{orange}{Technical Skills}}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Languages:} &  \normalsize{Python, C/C++, Java, Bash Scripting, SQL} \hfill \textbf{Communication \& Hobbies:}\\
+\textbf{Web Development:} &  \normalsize{HTML, CSS, Bootstrap, MERN Stack, Flask} \hfill English, Telugu, Hindi\\  
+% \textbf{Backend:} &  \normalsize{, Node.Js, Djang, Express.js} 
+% \textbf{Databases:} &  \normalsize{MySQL, MongoDB, SQLite} 
+
+\textbf{Frameworks \& Tools:} &  \normalsize{Git \& Github, Latex, APIs, D3.js, Jupyter notebooks, Postman.}
+\hfill Coding Contests \\ 
+\textbf{Relevant Courses:} &\normalsize{OS, Networks, DSA, Software Systems, ML, Information Security,\hfill  Films, Music, Chess
+Probability, Statistics, DBMS, Discrete Mathematics, Linear Algebra, \\ & Computer Architecture.}\\
+% \hfill Enjoying Music \& films \\
+
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+
+
+\section{\textcolor{orange}{Achievements }}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Reliance Foundation Undergraduate Scholar - Class of 2022 } & \hfill Aug 2022 - Present \\
+\multicolumn{2}{@{}X@{}}{ $\bullet$  Achieved the prestigious Reliance Foundation Undergraduate Scholarship, recognizing exceptional academic performance and commitment to community service, awarded to only 5\% of applicants nationwide.}  \\
+\end{tabularx}
+
+
+% I Think No Need ----------------------------------------------------------
+% \section{\textcolor{orange}{Extracurricular Activities}}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Kaooa Game} \| Python, Pygame & \hfill
+% \multicolumn{2}{@{}X@{}}{ $\bullet$ Developed and created a terminal-based game in Python and incorporated visual representation using python libraries.}\\
+% \textbf{Rock-Paper-Scissors} \| Networking, TCP, UDP & \hfill
+% \multicolumn{2}{@{}X@{}}{ $\bullet$ Developed a terminal-based Rock-Paper-Scissors game enabling multiplayer interaction using TCP and UDP protocols.}  \\
+% \textbf{Social Media Team: Felicity-23, IIIT-H } | \href{https://clubs.iiit.ac.in/profile/jagan.krishna}{Team Member} \hfill Dec 2022 - June 2023 \\
+% \multicolumn{2}{@{}X@{}}{$\bullet$ Played a key role in promoting IIIT-H Felicity 2023, engaging audiences, and enhancing digital marketing skills.}  \\
+
+% \end{tabularx}
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+
+\vfill
+
+\end{document}
