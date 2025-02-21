@@ -37,18 +37,10 @@ let data;
 
   const projects = [
     {
-      name: 'AudioFuse',
-      image: './audio_fus',
-      about:
-        'Platform to allow instructors from all over the world to create and teach courses. Students can enrol those courses and learn through them',
-      code: 'https://github.com/krishnaNallasingu/Audio_Fuse',
-      view: 'https://github.com/krishnaNallasingu/Audio_Fuse',
-    },
-    {
       name: 'BloodLytics',
       image: './bloodlytics.png',
       about:
-        'Management system for an Ad Agency to store and manipulate Actors, Brands, Directors, add contracts between them and much more with a CLI in Python',
+        'Developed an interactive dashboard to explore blood donation statistics, distribution, and donor behavior, highlighting the emergence of various blood groups',
       code: 'https://github.com/hemanth-sunkireddy/BloodLytics',
       view: 'https://krishnanallasingu.github.io/BloodLytics/',
 
@@ -57,24 +49,39 @@ let data;
       name: 'Network File System',
       image: './NFS.jpeg',
       about:
-        'Platform to help students better understand and prepare for the courses they will be taking in upcoming semesters. Look at reviews, learning curve, etc.',
+        'Developed a basic Network File System with Naming, Storage, and Client Servers, addressing concurrency with TCP/UDP protocols. Implemented file operations (read, write, delete, create, copy, move).',
       code: 'https://github.com/serc-courses/final-project-36',
-      view: 'https://github.com/serc-courses/final-project-36',
+      // view: 'https://github.com/serc-courses/final-project-36',
+    },
+    {
+      name: 'Advanced xv6',
+      image: './xv6.png',
+      about:
+        'Improved xv6 with new scheduling techniques, system calls and user programs. Analysis of different scheduling algorithms is done using Python',
+      code: 'https://github.com/serc-courses/mini-project-3-krishnaNallasingu',
     },
     {
       name: 'C Shell',
-      image: './img/C Shell.png',
+      image: './c_shell.png',
       about:
         'Bash-like command interpreter, written in C, with support for process management, piping/redirection and built-in as well as system commands',
-      code: 'https://github.com/serc-courses/final-project-36',
+      code: 'https://github.com/serc-courses/mini-project-1-krishnaNallasingu',
     },
     {
-      // name: 'Advanced xv6',
-      // image: './img/xv6.png',
-      // about:
-      //   'Improved xv6 with new scheduling techniques, system calls and user programs. Analysis of different scheduling algorithms is done using Python',
-      // code: 'https://github.com/tichnas/Advanced-xv6',
+      name: 'Chalana Chitram - A Relational Database for Queries',
+      image: './chalana.webp',
+      about:
+        'This project stores movie, cast, and crew details in a relational database for easy retrieval. We documented the schema and developed a Python app for database management with effective error handling.',
+      code: 'https://github.com/serc-courses/mini-project-1-krishnaNallasingu',
     },
+    {
+      name: 'AudioFuse',
+      image: './audio.jpeg',
+      about:
+        'Designed and developed ’Audio Fuse” music website with responsive UI, integrating interactive features like play buttons,search, and dynamic album displays.',
+      code: 'https://github.com/krishnaNallasingu/Audio_Fuse',
+      view: 'https://github.com/krishnaNallasingu/Audio_Fuse',
+    }
   ];
 
   data = { about, skills, projects };
